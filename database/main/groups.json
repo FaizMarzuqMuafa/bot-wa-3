@@ -1,1 +1,61 @@
-{}
+{
+  "120363427618821749@g.us": {
+    "chatStats": {
+      "6288212949095@s.whatsapp.net": {
+        "count": 5,
+        "lastChat": 1785611963938,
+        "name": "idk"
+      },
+      "62881011965054@s.whatsapp.net": {
+        "count": 4,
+        "lastChat": 1785611964413,
+        "name": "Michael"
+      },
+      "6285133216497@s.whatsapp.net": {
+        "count": 4,
+        "lastChat": 1785611964503,
+        "name": "Bieber"
+      }
+    },
+    "jid": "120363427618821749@g.us",
+    "name": "Cadang",
+    "welcome": false,
+    "leave": false,
+    "goodbye": false,
+    "antilink": false,
+    "antitoxic": false,
+    "mute": false,
+    "game": true,
+    "rpg": true,
+    "warnings": [],
+    "chat": {}
+  },
+  "120363405129381498@g.us": {
+    "welcome": false,
+    "goodbye": false,
+    "leave": false,
+    "jid": "120363405129381498@g.us",
+    "name": "Unknown Group",
+    "antilink": false,
+    "antitoxic": false,
+    "mute": false,
+    "game": true,
+    "rpg": true,
+    "warnings": [],
+    "chat": {}
+  },
+  "120363410193739570@g.us": {
+    "welcome": false,
+    "goodbye": false,
+    "leave": false,
+    "jid": "120363410193739570@g.us",
+    "name": "Unknown Group",
+    "antilink": false,
+    "antitoxic": false,
+    "mute": false,
+    "game": true,
+    "rpg": true,
+    "warnings": [],
+    "chat": {}
+  }
+}
