@@ -35,14 +35,21 @@
     "goodbye": false,
     "leave": false,
     "jid": "120363405129381498@g.us",
-    "name": "Unknown Group",
+    "name": "FallXd Community",
     "antilink": false,
     "antitoxic": false,
     "mute": false,
     "game": true,
     "rpg": true,
     "warnings": [],
-    "chat": {}
+    "chat": {},
+    "chatStats": {
+      "6285815672968@s.whatsapp.net": {
+        "count": 1,
+        "lastChat": 1785637641391,
+        "name": "ZansPiw"
+      }
+    }
   },
   "120363410193739570@g.us": {
     "welcome": false,
