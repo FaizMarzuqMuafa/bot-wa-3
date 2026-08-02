@@ -2,19 +2,24 @@
   "120363427618821749@g.us": {
     "chatStats": {
       "6288212949095@s.whatsapp.net": {
-        "count": 5,
-        "lastChat": 1785611963938,
+        "count": 18,
+        "lastChat": 1785664366246,
         "name": "idk"
       },
       "62881011965054@s.whatsapp.net": {
-        "count": 4,
-        "lastChat": 1785611964413,
+        "count": 5,
+        "lastChat": 1785664283676,
         "name": "Michael"
       },
       "6285133216497@s.whatsapp.net": {
-        "count": 4,
-        "lastChat": 1785611964503,
+        "count": 5,
+        "lastChat": 1785664284866,
         "name": "Bieber"
+      },
+      "62895428283397@s.whatsapp.net": {
+        "count": 15,
+        "lastChat": 1785659298010,
+        "name": "kira"
       }
     },
     "jid": "120363427618821749@g.us",
@@ -48,6 +53,11 @@
         "count": 1,
         "lastChat": 1785637641391,
         "name": "ZansPiw"
+      },
+      "6285813708397@s.whatsapp.net": {
+        "count": 2,
+        "lastChat": 1785648356017,
+        "name": "FallZx Infinity"
       }
     }
   },
@@ -56,13 +66,20 @@
     "goodbye": false,
     "leave": false,
     "jid": "120363410193739570@g.us",
-    "name": "Unknown Group",
+    "name": "YT : FallZx Infinity X Infinity Store",
     "antilink": false,
     "antitoxic": false,
     "mute": false,
     "game": true,
     "rpg": true,
     "warnings": [],
-    "chat": {}
+    "chat": {},
+    "chatStats": {
+      "6285813708397@s.whatsapp.net": {
+        "count": 1,
+        "lastChat": 1785648345999,
+        "name": "FallZx Infinity"
+      }
+    }
   }
 }
