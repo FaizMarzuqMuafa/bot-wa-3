@@ -2,23 +2,23 @@
   "120363427618821749@g.us": {
     "chatStats": {
       "6288212949095@s.whatsapp.net": {
-        "count": 18,
-        "lastChat": 1785664366246,
+        "count": 56,
+        "lastChat": 1785675973889,
         "name": "idk"
       },
       "62881011965054@s.whatsapp.net": {
-        "count": 5,
-        "lastChat": 1785664283676,
+        "count": 9,
+        "lastChat": 1785666723798,
         "name": "Michael"
       },
       "6285133216497@s.whatsapp.net": {
-        "count": 5,
-        "lastChat": 1785664284866,
+        "count": 9,
+        "lastChat": 1785666722458,
         "name": "Bieber"
       },
       "62895428283397@s.whatsapp.net": {
-        "count": 15,
-        "lastChat": 1785659298010,
+        "count": 65,
+        "lastChat": 1785672723972,
         "name": "kira"
       }
     },
@@ -81,5 +81,19 @@
         "name": "FallZx Infinity"
       }
     }
+  },
+  "120363423339531498@g.us": {
+    "welcome": false,
+    "goodbye": false,
+    "leave": false,
+    "jid": "120363423339531498@g.us",
+    "name": "Unknown Group",
+    "antilink": false,
+    "antitoxic": false,
+    "mute": false,
+    "game": true,
+    "rpg": true,
+    "warnings": [],
+    "chat": {}
   }
 }

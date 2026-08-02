@@ -1,6 +1,8 @@
 {
-  "commandsExecuted": 4,
-  "command_ping": 2,
+  "commandsExecuted": 8,
+  "command_ping": 3,
   "command_danafake": 1,
-  "command_ganti-asset": 1
+  "command_ganti-asset": 1,
+  "command_addown": 1,
+  "command_swgc": 2
 }
