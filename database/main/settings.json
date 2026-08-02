@@ -27,7 +27,7 @@
   "publicAdmin": false,
   "_lastEnergiDefault": 99999,
   "_lastEnergiPremium": 99999999,
-  "lastLimitReset": "2026-07-07T17:00:00.041Z",
+  "lastLimitReset": "2026-08-02T17:00:00.004Z",
   "onlyThisGroup": null,
   "autoJpm": {
     "enabled": false,
@@ -90,6 +90,10 @@
     "62895428283397@s.whatsapp.net": {
       "jid": "62895428283397@s.whatsapp.net",
       "name": "kira"
+    },
+    "6283116101192@s.whatsapp.net": {
+      "jid": "6283116101192@s.whatsapp.net",
+      "name": "ebew"
     }
   },
   "notiflimit": false,
