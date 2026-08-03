@@ -1,10 +1,12 @@
 {
-  "commandsExecuted": 11,
+  "commandsExecuted": 13,
   "command_ping": 5,
   "command_danafake": 1,
   "command_ganti-asset": 1,
   "command_addown": 1,
   "command_swgc": 2,
   "dailyResets": 1,
-  "command_join": 1
+  "command_join": 1,
+  "command_self": 1,
+  "command_bratvid": 1
 }
