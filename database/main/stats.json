@@ -1,5 +1,5 @@
 {
-  "commandsExecuted": 23,
+  "commandsExecuted": 24,
   "command_ping": 9,
   "command_danafake": 1,
   "command_ganti-asset": 1,
@@ -9,7 +9,7 @@
   "command_join": 1,
   "command_self": 1,
   "command_bratvid": 1,
-  "command_tt": 1,
+  "command_tt": 2,
   "command_menu": 2,
   "command_brat": 1
 }
