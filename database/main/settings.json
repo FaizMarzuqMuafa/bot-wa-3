@@ -3,8 +3,8 @@
   "ownerNumbers": [],
   "ownerType": 2,
   "welcomeType": 7,
-  "replyVariant": 9,
-  "menuVariant": 7,
+  "replyVariant": 11,
+  "menuVariant": 8,
   "botAfk": {
     "active": false
   },
@@ -16,7 +16,7 @@
   "onlyGc": false,
   "onlyPc": false,
   "giveaways": {},
-  "botMode": "self",
+  "botMode": "public",
   "audioMenu": true,
   "transactionSessions": {},
   "premiumUsers": [],
@@ -27,7 +27,7 @@
   "publicAdmin": false,
   "_lastEnergiDefault": 99999,
   "_lastEnergiPremium": 99999999,
-  "lastLimitReset": "2026-08-29T17:00:00.012Z",
+  "lastLimitReset": "2026-08-04T17:00:00.043Z",
   "onlyThisGroup": null,
   "autoJpm": {
     "enabled": false,
@@ -66,48 +66,7 @@
   "ownerNames": {},
   "publicGroups": [],
   "autoRead": false,
-  "contacts": {
-    "6288212949095@s.whatsapp.net": {
-      "jid": "6288212949095@s.whatsapp.net",
-      "name": "idk"
-    },
-    "62881011965054@s.whatsapp.net": {
-      "jid": "62881011965054@s.whatsapp.net",
-      "name": "Michael"
-    },
-    "6285133216497@s.whatsapp.net": {
-      "jid": "6285133216497@s.whatsapp.net",
-      "name": "Bieber"
-    },
-    "6285815672968@s.whatsapp.net": {
-      "jid": "6285815672968@s.whatsapp.net",
-      "name": "wiwokdkek"
-    },
-    "6285813708397@s.whatsapp.net": {
-      "jid": "6285813708397@s.whatsapp.net",
-      "name": "FallZx Infinity"
-    },
-    "62895428283397@s.whatsapp.net": {
-      "jid": "62895428283397@s.whatsapp.net",
-      "name": "kira"
-    },
-    "6283116101192@s.whatsapp.net": {
-      "jid": "6283116101192@s.whatsapp.net",
-      "name": "ebew"
-    },
-    "6289674682745@s.whatsapp.net": {
-      "jid": "6289674682745@s.whatsapp.net",
-      "name": "Family"
-    },
-    "6283852808614@s.whatsapp.net": {
-      "jid": "6283852808614@s.whatsapp.net",
-      "name": "FallZx Infinity CoderId"
-    },
-    "62881011965061@s.whatsapp.net": {
-      "jid": "62881011965061@s.whatsapp.net",
-      "name": "charl jhonson"
-    }
-  },
+  "contacts": {},
   "notiflimit": false,
   "pgTopups": {},
   "pgPayments": {},

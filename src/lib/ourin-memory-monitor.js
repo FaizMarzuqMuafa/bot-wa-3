@@ -33,7 +33,7 @@ function startMemoryMonitor() {
   if (monitorTimer.unref) monitorTimer.unref();
   logger.success(
     "memory",
-    `monitoring active, limit ${formatMB(RSS_LIMIT)}, check every ${CHECK_INTERVAL / 60000}m`,
+    `Pantau RAM aktif, limit ${formatMB(RSS_LIMIT)}, cek tiap ${CHECK_INTERVAL / 60000} menit`,
   );
 }
 

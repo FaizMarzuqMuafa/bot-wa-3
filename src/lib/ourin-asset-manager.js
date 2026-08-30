@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { logger } from './ourin-logger.js';
 
 // Memory cache for all local assets
 const assetCache = {};
@@ -16,13 +17,13 @@ export function preloadAssets(configAssets) {
         const fullPath = path.resolve(process.cwd(), filepath);
         if (fs.existsSync(fullPath)) {
           assetCache[key] = fs.readFileSync(fullPath);
-          console.log(`[AssetManager] 📂 Successfully cached: ${key}`);
+          logger.system("CACHE", `Loaded: ${key}`);
         } else {
-          console.error(`[AssetManager] ❌ File not found: ${fullPath}`);
+          logger.warn("CACHE", `File not found: ${fullPath}`);
         }
       }
     } catch (e) {
-      console.error(`[AssetManager] ❌ Failed to load ${key}:`, e.message);
+      logger.error("CACHE", `Failed to load ${key}: ${e.message}`);
     }
   }
 }
@@ -52,7 +53,7 @@ export function getAssetBuffer(key, configAssets = null) {
         return buf;
       }
     } catch (e) {
-      console.error(`[AssetManager] Failed to read ${key} from disk:`, e.message);
+      console.error(`  ✖  ERR   Failed to read ${key} from disk:`, e.message);
     }
   }
   
@@ -73,7 +74,7 @@ export function updateAssetAndSave(key, buffer, filepath) {
       const fullPath = path.resolve(process.cwd(), filepath);
       fs.writeFileSync(fullPath, buffer);
     } catch (e) {
-      console.error(`[AssetManager] Failed to write updated asset ${key} to disk:`, e.message);
+      console.error(`  ✖  ERR   Failed to write updated asset ${key} to disk:`, e.message);
     }
   }
 }
