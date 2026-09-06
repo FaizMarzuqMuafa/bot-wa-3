@@ -4,6 +4,7 @@ import {
   useMultiFileAuthState,
   makeCacheableSignalKeyStore,
   fetchLatestBaileysVersion,
+  fetchLatestWaWebVersion,
 } from "ourin";
 import { Boom } from "@hapi/boom";
 import pino from "pino";
@@ -42,7 +43,7 @@ function startWatchdog(reconnectFn, options) {
     if (silentMs > WATCHDOG_TIMEOUT && connectionState.isReady) {
       colors.logger.warn(
         "watchdog",
-        `Pesan tidak terdeteksi, maka sistem akan me restart, supaya fresh`,
+        `Nggak ada pesan masuk nih, bot bakal restart biar seger lagi`,
       );
       connectionState.isReady = false;
       connectionState.isConnected = false;
@@ -55,7 +56,7 @@ function startWatchdog(reconnectFn, options) {
   if (watchdogTimer.unref) watchdogTimer.unref();
   colors.logger.success(
     "watchdog",
-    `aktif, batas waktu ${WATCHDOG_TIMEOUT / 60000} menit`,
+    `udah aktif nih, batas nunggunya ${WATCHDOG_TIMEOUT / 60000} menit`,
   );
 }
 
@@ -66,6 +67,12 @@ function stopWatchdog() {
   }
 }
 
+import sharp from "sharp";
+try {
+  sharp.cache({ memory: 20, files: 0, items: 50 });
+  sharp.concurrency(1);
+} catch {}
+
 const store = {
   messages: new Map(),
   chats: new Map(),
@@ -75,13 +82,19 @@ const store = {
       for (const msg of msgs) {
         const jid = msg.key?.remoteJid;
         if (!jid) continue;
-        if (!this.messages.has(jid)) this.messages.set(jid, new Map());
+        if (!this.messages.has(jid)) {
+          if (this.messages.size >= 300) {
+            const firstKey = this.messages.keys().next().value;
+            if (firstKey) this.messages.delete(firstKey);
+          }
+          this.messages.set(jid, new Map());
+        }
         const chat = this.messages.get(jid);
         if (msg.key?.id) {
           chat.set(msg.key.id, msg);
-          if (chat.size > 200) {
+          if (chat.size > 30) {
             const keys = [...chat.keys()];
-            for (let i = 0; i < keys.length - 150; i++) chat.delete(keys[i]);
+            for (let i = 0; i < keys.length - 25; i++) chat.delete(keys[i]);
           }
         }
         if (msg.key?.participantAlt && msg.key?.participant) {
@@ -99,25 +112,44 @@ const store = {
           }
         }
         if (!this.chats.has(jid)) {
+          if (this.chats.size >= 300) {
+            const firstChatKey = this.chats.keys().next().value;
+            if (firstChatKey) this.chats.delete(firstChatKey);
+          }
           this.chats.set(jid, { id: jid });
         }
         if (msg.pushName && jid.endsWith("@s.whatsapp.net")) {
+          const contactKeys = Object.keys(this.contacts);
+          if (contactKeys.length >= 500) {
+            delete this.contacts[contactKeys[0]];
+          }
           this.contacts[jid] = { ...this.contacts[jid], notify: msg.pushName };
         }
       }
     });
     ev.on("chats.upsert", (chats) => {
       for (const chat of chats) {
-        if (chat.id) this.chats.set(chat.id, chat);
+        if (chat.id) {
+          if (this.chats.size >= 300 && !this.chats.has(chat.id)) {
+            const firstChatKey = this.chats.keys().next().value;
+            if (firstChatKey) this.chats.delete(firstChatKey);
+          }
+          this.chats.set(chat.id, chat);
+        }
       }
     });
     ev.on("contacts.upsert", (contacts) => {
       for (const contact of contacts) {
-        if (contact.id)
+        if (contact.id) {
+          const contactKeys = Object.keys(this.contacts);
+          if (contactKeys.length >= 500 && !this.contacts[contact.id]) {
+            delete this.contacts[contactKeys[0]];
+          }
           this.contacts[contact.id] = {
             ...this.contacts[contact.id],
             ...contact,
           };
+        }
       }
     });
   },
@@ -239,12 +271,9 @@ async function startConnection(options = {}) {
   }
 
   const { state, saveCreds } = await useMultiFileAuthState(sessionPath);
-
-  const { version, isLatest } = await fetchLatestBaileysVersion();
-
+  const { version, isLatest } = await fetchLatestBaileysVersion()
   const usePairingCode = config.session?.usePairingCode === true;
   const pairingNumber = config.session?.pairingNumber || "";
-
   const sock = makeWASocket({
     version: version,
     logger,
@@ -254,7 +283,7 @@ async function startConnection(options = {}) {
       creds: state.creds,
       keys: makeCacheableSignalKeyStore(state.keys, logger),
     },
-    browser: ["Mac OS", "Chrome", "14.4.1"],
+    browser: ["Ubuntu", "Chrome", "22.0.0"],
     syncFullHistory: false,
     markOnlineOnConnect: false,
     generateHighQualityLinkPreview: false,
@@ -438,7 +467,7 @@ async function startConnection(options = {}) {
 
       try {
         await sock.uploadPreKeys();
-        colors.logger.success("session", "pre-keys berhasil di-upload ke server");
+        colors.logger.success("session", "Sip, pre-keys udah dikirim ke server nih");
       } catch (e) {
         colors.logger.warn("session", `gagal upload pre-keys: ${e.message}`);
       }
@@ -449,7 +478,7 @@ async function startConnection(options = {}) {
 
       colors.logger.info(
         "bot",
-        `${config.bot?.name || "Ourin-AI"} (${n || "?"}) · WA v${version.join(".")}`,
+        `Tersambung ke: ${config.bot?.name || "Ourin-AI"} (${n || "?"}) · WA v${version.join(".")}`,
       );
 
       setTimeout(async () => {
@@ -461,6 +490,17 @@ async function startConnection(options = {}) {
       }, 100);
 
       startWatchdog(startConnection, options);
+
+      if (config.fake_call?.active && !global.voipClient) {
+        try {
+          const { VoipClient } = await import("ourin");
+          global.voipClient = new VoipClient();
+          await global.voipClient.connectWithSocket(sock);
+          colors.logger.success("voip", "Mesin VoIP nyala nih bos (shared socket)");
+        } catch (e) {
+          colors.logger.warn("voip", `gagal init VoIP: ${e.message}`);
+        }
+      }
 
       const autoActionFlag = path.join(
         process.cwd(),
@@ -501,7 +541,7 @@ async function startConnection(options = {}) {
         }, 8e3);
       }
 
-      colors.logger.success("whatsapp", "siap menerima pesan");
+      colors.logger.success("whatsapp", "Udah siap nerima chat ya bosku!");
       try {
         initAutoBackup(sock);
       } catch (e) {
@@ -900,13 +940,7 @@ async function startConnection(options = {}) {
         "senderKeyDistributionMessage",
         "stickerSyncRmrMessage",
         "encReactionMessage",
-        "pollUpdateMessage",
-        "pollCreationMessage",
-        "pollCreationMessageV2",
-        "pollCreationMessageV3",
         "keepInChatMessage",
-        "requestPhoneNumberMessage",
-        "pinInChatMessage",
         "deviceSentMessage",
         "call",
         "peerDataOperationRequestMessage",
@@ -977,15 +1011,15 @@ async function startConnection(options = {}) {
         // Jangan di-overwrite jadi @s.whatsapp.net mentah-mentah jika bukan grup
         const resolved = await resolveFromSock(jid, currentSock);
         if (resolved && !isLid(resolved) && !isLidConverted(resolved)) {
-           jid = resolved;
-           msg.key.remoteJid = jid;
+          jid = resolved;
+          msg.key.remoteJid = jid;
         }
       }
 
       if (msg.key.participant && isLid(msg.key.participant)) {
         const resolvedPart = await resolveFromSock(msg.key.participant, currentSock);
         if (resolvedPart && !isLid(resolvedPart) && !isLidConverted(resolvedPart)) {
-           msg.key.participant = resolvedPart;
+          msg.key.participant = resolvedPart;
         }
       }
       if (jid.endsWith("@broadcast")) {

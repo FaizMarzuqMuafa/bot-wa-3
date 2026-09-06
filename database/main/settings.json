@@ -27,7 +27,7 @@
   "publicAdmin": false,
   "_lastEnergiDefault": 99999,
   "_lastEnergiPremium": 99999999,
-  "lastLimitReset": "2026-09-05T17:00:00.007Z",
+  "lastLimitReset": "2026-08-22T17:00:00.064Z",
   "onlyThisGroup": null,
   "autoJpm": {
     "enabled": false,
@@ -66,7 +66,24 @@
   "ownerNames": {},
   "publicGroups": [],
   "autoRead": false,
-  "contacts": {},
+  "contacts": {
+    "6283106414327@s.whatsapp.net": {
+      "jid": "6283106414327@s.whatsapp.net",
+      "name": "Zann"
+    },
+    "967739844829@s.whatsapp.net": {
+      "jid": "967739844829@s.whatsapp.net",
+      "name": "hyuLʏʀɪᴄ"
+    },
+    "6285196041670@s.whatsapp.net": {
+      "jid": "6285196041670@s.whatsapp.net",
+      "name": "what"
+    },
+    "6288994182258@s.whatsapp.net": {
+      "jid": "6288994182258@s.whatsapp.net",
+      "name": "_-"
+    }
+  },
   "notiflimit": false,
   "pgTopups": {},
   "pgPayments": {},

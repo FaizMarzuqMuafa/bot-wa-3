@@ -9,26 +9,25 @@ const config = {
   },
 
   owner: {
-    name: "pais", // Nama owner
-    number: ["6288212949095"], // Format: 628xxx (tanpa + atau 0)
+    name: "Zann", // Nama owner
+    number: ["62xxxxxxxxxxx"], // Format: 628xxx (tanpa + atau 0)
   },
 
   session: {
-    pairingNumber: "6285187343572", // Nomor WA yang akan di-pair, ini penting
+    pairingNumber: "62xxxxxxxxxxxxx", // Nomor WA yang akan di-pair, ini penting
     usePairingCode: true, // true = Pairing Code, false = QR Code
   },
 
-  // fitur ini buat fitur kayak playcall, tapi nanti disuruh pairing lagi
   fake_call: {
-    active: true, // kalau true berarti sistem aktif dan bisa di pakai, kalau false berarti sistem tidak aktif dan tidak bisa di pakai
+    active: false,
     usePairing: true,
     dir: "./session_voip",
   },
 
   bot: {
-    name: "justfriend mania", // Nama bot
-    version: "3.3", // Versi bot
-    developer: "pais", // Nama developer
+    name: "𝗢𝗨𝗥𝗜𝗡 𝗠𝗗", // Nama bot
+    version: "3.3.1", // Versi bot
+    developer: "Zann", // Nama developer
   },
 
   assets: {

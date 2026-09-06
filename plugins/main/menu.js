@@ -1370,9 +1370,6 @@ I'm ${botName}, your intelligent assistant powered by ${config.bot?.developer}. 
         case7Text += `❑ Energy: ${userLimit}\n\n`;
         case7Text += `Hello, my friend *"${m.pushName}"*!\nHow are you today? You're feeling well, right?\n\nYou've been online for *${hariKe} days*\n\n`;
 
-case7Text += `[ 🌐 READY PANEL LEGAL ]\n`;
-case7Text += `zanspiwpteroshoppanel.my.id\n\n`;
-
         const readmore = String.fromCharCode(8206).repeat(4001);
         case7Text += readmore + "";
 
