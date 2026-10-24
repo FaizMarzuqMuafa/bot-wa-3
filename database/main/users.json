@@ -1,13 +1,13 @@
 {
   "6288212949095": {
     "name": "idk",
-    "lastSeen": "2026-10-23T16:21:20.922Z",
+    "lastSeen": "2026-10-24T03:05:06.539Z",
     "jid": "6288212949095",
     "number": "6288212949095",
     "energi": 99999,
     "isPremium": false,
     "isBanned": false,
-    "exp": 195,
+    "exp": 405,
     "level": 1,
     "koin": 0,
     "saldo": 0,
@@ -26,8 +26,8 @@
     "rpg": {},
     "inventory": {},
     "access": [],
-    "lastActiveDate": "23/10/2026",
-    "activeDays": 1
+    "lastActiveDate": "24/10/2026",
+    "activeDays": 2
   },
   "62881011965054": {
     "jid": "62881011965054",
@@ -92,7 +92,7 @@
     "energi": 99999,
     "isPremium": false,
     "isBanned": false,
-    "exp": 195,
+    "exp": 240,
     "level": 1,
     "koin": 0,
     "saldo": 0,
@@ -102,7 +102,7 @@
     "registrationCount": 0,
     "hasClaimedRegisterReward": false,
     "unregisteredAt": null,
-    "lastSeen": "2026-10-23T18:54:52.197Z",
+    "lastSeen": "2026-10-24T02:58:27.296Z",
     "cooldowns": {},
     "clanId": null,
     "isRegistered": false,

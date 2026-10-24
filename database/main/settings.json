@@ -39,7 +39,7 @@
   "jedaJpm": 10000,
   "globalCustomReplies": [],
   "panelCreateLastUsed": 1775377733441,
-  "autoJoinGc": false,
+  "autoJoinGc": true,
   "autoSholat": false,
   "errorLog": [],
   "jpmBlacklist": [],
