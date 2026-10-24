@@ -4,7 +4,7 @@
   "command_self": 1,
   "command_allmenu": 2,
   "command_swgc": 2,
-  "dailyResets": 1,
+  "dailyResets": 2,
   "command_tt": 3,
   "command_autojoin": 1,
   "command_autojoingc": 2,
