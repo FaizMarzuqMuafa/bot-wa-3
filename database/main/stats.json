@@ -1,11 +1,11 @@
 {
-  "commandsExecuted": 21,
+  "commandsExecuted": 22,
   "command_ping": 8,
   "command_self": 1,
   "command_allmenu": 2,
   "command_swgc": 2,
   "dailyResets": 1,
-  "command_tt": 2,
+  "command_tt": 3,
   "command_autojoin": 1,
   "command_autojoingc": 2,
   "command_ttmp3": 1,
