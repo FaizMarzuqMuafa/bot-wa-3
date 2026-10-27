@@ -1,13 +1,13 @@
 {
   "6288212949095": {
     "name": "idk",
-    "lastSeen": "2026-10-26T13:16:55.097Z",
+    "lastSeen": "2026-10-27T23:01:02.662Z",
     "jid": "6288212949095",
     "number": "6288212949095",
     "energi": 99999,
     "isPremium": false,
     "isBanned": false,
-    "exp": 555,
+    "exp": 600,
     "level": 1,
     "koin": 0,
     "saldo": 0,
@@ -26,8 +26,8 @@
     "rpg": {},
     "inventory": {},
     "access": [],
-    "lastActiveDate": "26/10/2026",
-    "activeDays": 4
+    "lastActiveDate": "28/10/2026",
+    "activeDays": 5
   },
   "62881011965054": {
     "jid": "62881011965054",

@@ -2,13 +2,13 @@
   "120363427618821749@g.us": {
     "chatStats": {
       "6288212949095@s.whatsapp.net": {
-        "count": 38,
-        "lastChat": 1793020615096,
+        "count": 41,
+        "lastChat": 1793142062661,
         "name": "idk"
       },
       "62881011965054@s.whatsapp.net": {
-        "count": 56,
-        "lastChat": 1793020628207,
+        "count": 58,
+        "lastChat": 1793142066525,
         "name": "Michael"
       },
       "6289674682745@s.whatsapp.net": {
@@ -99,5 +99,315 @@
     "rpg": true,
     "warnings": [],
     "chat": {}
+  },
+  "120363242890130727@g.us": {
+    "welcome": false,
+    "goodbye": false,
+    "leave": false,
+    "jid": "120363242890130727@g.us",
+    "name": "Unknown Group",
+    "antilink": false,
+    "antitoxic": false,
+    "mute": false,
+    "game": true,
+    "rpg": true,
+    "warnings": [],
+    "chat": {}
+  },
+  "120363195374410170@g.us": {
+    "welcome": false,
+    "goodbye": false,
+    "leave": false,
+    "jid": "120363195374410170@g.us",
+    "name": "Unknown Group",
+    "antilink": false,
+    "antitoxic": false,
+    "mute": false,
+    "game": true,
+    "rpg": true,
+    "warnings": [],
+    "chat": {}
+  },
+  "120363408450401697@g.us": {
+    "welcome": false,
+    "goodbye": false,
+    "leave": false,
+    "jid": "120363408450401697@g.us",
+    "name": "STORE ROBUX V3 | WANG STORE",
+    "antilink": false,
+    "antitoxic": false,
+    "mute": false,
+    "game": true,
+    "rpg": true,
+    "warnings": [],
+    "chat": {},
+    "chatStats": {
+      "6289503312050@s.whatsapp.net": {
+        "count": 1,
+        "lastChat": 1793130459953,
+        "name": "han"
+      }
+    }
+  },
+  "120363412052670642@g.us": {
+    "welcome": false,
+    "goodbye": false,
+    "leave": false,
+    "jid": "120363412052670642@g.us",
+    "name": "𝗗𝗨𝗡𝗜𝗔² 𝗝𝗦 | 𝗦𝗧𝗢𝗖𝗞 𝗬𝗢𝗨𝗧𝗬𝗭 𝗖𝗘𝗢 𝗠𝗨𝗗𝗔",
+    "antilink": false,
+    "antitoxic": false,
+    "mute": false,
+    "game": true,
+    "rpg": true,
+    "warnings": [],
+    "chat": {},
+    "chatStats": {
+      "6289671855645@s.whatsapp.net": {
+        "count": 2,
+        "lastChat": 1793131249683,
+        "name": "Vanz"
+      },
+      "62895405522405@s.whatsapp.net": {
+        "count": 2,
+        "lastChat": 1793136249622,
+        "name": "kiko"
+      },
+      "62883846544831@s.whatsapp.net": {
+        "count": 3,
+        "lastChat": 1793140915331,
+        "name": "blast"
+      },
+      "6289675563476@s.whatsapp.net": {
+        "count": 1,
+        "lastChat": 1793137358732,
+        "name": "𝗥𝗢𝗠𝗜𝗜"
+      },
+      "6281770620094@s.whatsapp.net": {
+        "count": 3,
+        "lastChat": 1793142777719,
+        "name": "kyy nope 2"
+      },
+      "6281930366390@s.whatsapp.net": {
+        "count": 3,
+        "lastChat": 1793140564720,
+        "name": "𝗥𝗜𝗗𝗛𝗢 𝗦𝗧𝗢𝗥𝗘 𝗡𝗢𝗣𝗘 𝗨𝗧𝗔𝗠𝗔"
+      },
+      "6283171781847@s.whatsapp.net": {
+        "count": 2,
+        "lastChat": 1793143552323,
+        "name": "Eyinn File STORE [1847]"
+      },
+      "6285355960551@s.whatsapp.net": {
+        "count": 1,
+        "lastChat": 1793143684514,
+        "name": "Bot Vinzx"
+      }
+    }
+  },
+  "120363410984153476@g.us": {
+    "chatStats": {
+      "6289671855645@s.whatsapp.net": {
+        "count": 2,
+        "lastChat": 1793131250484,
+        "name": "Vanz"
+      },
+      "62895405522405@s.whatsapp.net": {
+        "count": 2,
+        "lastChat": 1793136254836,
+        "name": "kiko"
+      },
+      "62883846544831@s.whatsapp.net": {
+        "count": 3,
+        "lastChat": 1793140988870,
+        "name": "blast"
+      },
+      "6289675563476@s.whatsapp.net": {
+        "count": 1,
+        "lastChat": 1793137353394,
+        "name": "𝗥𝗢𝗠𝗜𝗜"
+      },
+      "6289672814529@s.whatsapp.net": {
+        "count": 1,
+        "lastChat": 1793140231989,
+        "name": "king real bai aydol"
+      },
+      "6285185471135@s.whatsapp.net": {
+        "count": 2,
+        "lastChat": 1793142054065,
+        "name": "LIE4YOU STORE"
+      },
+      "6287890448959@s.whatsapp.net": {
+        "count": 2,
+        "lastChat": 1793143562204,
+        "name": "rapp"
+      },
+      "6283190085781@s.whatsapp.net": {
+        "count": 1,
+        "lastChat": 1793141459873,
+        "name": "Mnz nope²"
+      },
+      "6281957167671@s.whatsapp.net": {
+        "count": 3,
+        "lastChat": 1793144236414,
+        "name": "waka"
+      }
+    },
+    "jid": "120363410984153476@g.us",
+    "name": "𝗗𝗨𝗡𝗜𝗔³ 𝗝𝗦 | 𝗦𝗧𝗢𝗖𝗞 𝗬𝗢𝗨𝗧𝗬𝗭 𝗖𝗘𝗢 𝗠𝗨𝗗𝗔",
+    "welcome": false,
+    "leave": false,
+    "goodbye": false,
+    "antilink": false,
+    "antitoxic": false,
+    "mute": false,
+    "game": true,
+    "rpg": true,
+    "warnings": [],
+    "chat": {}
+  },
+  "120363431038284775@g.us": {
+    "welcome": false,
+    "goodbye": false,
+    "leave": false,
+    "jid": "120363431038284775@g.us",
+    "name": "JB || HANZ X WIZAA STORE",
+    "antilink": false,
+    "antitoxic": false,
+    "mute": false,
+    "game": true,
+    "rpg": true,
+    "warnings": [],
+    "chat": {},
+    "chatStats": {
+      "6285123956733@s.whatsapp.net": {
+        "count": 1,
+        "lastChat": 1793138241382,
+        "name": "ᯓ★𝘿𝙞𝙏𝘼𝙉✌︎㋡"
+      },
+      "6283125068684@s.whatsapp.net": {
+        "count": 3,
+        "lastChat": 1793141999958,
+        "name": "nomer wiza kusus js jp mc"
+      }
+    }
+  },
+  "120363198555792881@g.us": {
+    "welcome": false,
+    "goodbye": false,
+    "leave": false,
+    "jid": "120363198555792881@g.us",
+    "name": "Unknown Group",
+    "antilink": false,
+    "antitoxic": false,
+    "mute": false,
+    "game": true,
+    "rpg": true,
+    "warnings": [],
+    "chat": {}
+  },
+  "120363409183355054@g.us": {
+    "welcome": false,
+    "goodbye": false,
+    "leave": false,
+    "jid": "120363409183355054@g.us",
+    "name": "JB SYAD¹ || REG TANGKAB",
+    "antilink": false,
+    "antitoxic": false,
+    "mute": false,
+    "game": true,
+    "rpg": true,
+    "warnings": [],
+    "chat": {},
+    "chatStats": {
+      "6285286332614@s.whatsapp.net": {
+        "count": 1,
+        "lastChat": 1793140039854,
+        "name": "syad store"
+      },
+      "6289663665300@s.whatsapp.net": {
+        "count": 1,
+        "lastChat": 1793141434277,
+        "name": "a"
+      },
+      "6285137415984@s.whatsapp.net": {
+        "count": 2,
+        "lastChat": 1793143238014,
+        "name": "rezan"
+      }
+    }
+  },
+  "120363412507870192@g.us": {
+    "welcome": false,
+    "goodbye": false,
+    "leave": false,
+    "jid": "120363412507870192@g.us",
+    "name": "JB ALL GAME || REXZY STORE [1]",
+    "antilink": false,
+    "antitoxic": false,
+    "mute": false,
+    "game": true,
+    "rpg": true,
+    "warnings": [],
+    "chat": {},
+    "chatStats": {
+      "6285726502931@s.whatsapp.net": {
+        "count": 2,
+        "lastChat": 1793142794511,
+        "name": "Zixal19"
+      },
+      "144796853227698@s.whatsapp.net": {
+        "count": 1,
+        "lastChat": 1793143965756,
+        "name": "PEROX SELLER"
+      }
+    }
+  },
+  "120363430928546617@g.us": {
+    "chatStats": {
+      "6285181051503@s.whatsapp.net": {
+        "count": 1,
+        "lastChat": 1793143480331,
+        "name": "Aku Hitori"
+      },
+      "6285181850798@s.whatsapp.net": {
+        "count": 2,
+        "lastChat": 1793143528827,
+        "name": "Aku Hitori Gotou"
+      }
+    },
+    "jid": "120363430928546617@g.us",
+    "name": "WARUNG JPM XOBE X HITORI YTTA",
+    "welcome": false,
+    "leave": false,
+    "goodbye": false,
+    "antilink": false,
+    "antitoxic": false,
+    "mute": false,
+    "game": true,
+    "rpg": true,
+    "warnings": [],
+    "chat": {}
+  },
+  "120363404795240444@g.us": {
+    "welcome": false,
+    "goodbye": false,
+    "leave": false,
+    "jid": "120363404795240444@g.us",
+    "name": "GB¹ || FRENTA AREA",
+    "antilink": false,
+    "antitoxic": false,
+    "mute": false,
+    "game": true,
+    "rpg": true,
+    "warnings": [],
+    "chat": {},
+    "chatStats": {
+      "6285709142489@s.whatsapp.net": {
+        "count": 1,
+        "lastChat": 1793144294163,
+        "name": "king ipong"
+      }
+    }
   }
 }
