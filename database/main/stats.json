@@ -1,19 +1,20 @@
 {
-  "commandsExecuted": 35,
+  "commandsExecuted": 39,
   "command_ping": 10,
   "command_self": 1,
   "command_allmenu": 2,
   "command_swgc": 3,
   "dailyResets": 5,
-  "command_tt": 5,
+  "command_tt": 6,
   "command_autojoin": 1,
   "command_autojoingc": 2,
-  "command_ttmp3": 1,
+  "command_ttmp3": 2,
   "command_ptvch": 2,
   "command_hd": 1,
   "command_wink": 2,
   "command_remini": 1,
   "command_upscale": 2,
   "command_brat": 1,
-  "command_bratimg": 1
+  "command_bratimg": 1,
+  "command_s": 2
 }
