@@ -1,13 +1,13 @@
 {
   "6288212949095": {
     "name": "idk",
-    "lastSeen": "2026-10-29T12:58:09.762Z",
+    "lastSeen": "2026-10-30T15:34:36.410Z",
     "jid": "6288212949095",
     "number": "6288212949095",
     "energi": 99999,
     "isPremium": false,
     "isBanned": false,
-    "exp": 705,
+    "exp": 765,
     "level": 1,
     "koin": 0,
     "saldo": 0,
@@ -26,8 +26,8 @@
     "rpg": {},
     "inventory": {},
     "access": [],
-    "lastActiveDate": "29/10/2026",
-    "activeDays": 6
+    "lastActiveDate": "30/10/2026",
+    "activeDays": 7
   },
   "62881011965054": {
     "jid": "62881011965054",
@@ -87,12 +87,12 @@
   },
   "6285187343572": {
     "jid": "6285187343572",
-    "name": "Unknown",
+    "name": "Channel",
     "number": "6285187343572",
     "energi": 99999,
     "isPremium": false,
     "isBanned": false,
-    "exp": 2115,
+    "exp": 2205,
     "level": 1,
     "koin": 0,
     "saldo": 0,
@@ -102,7 +102,7 @@
     "registrationCount": 0,
     "hasClaimedRegisterReward": false,
     "unregisteredAt": null,
-    "lastSeen": "2026-10-30T10:57:11.101Z",
+    "lastSeen": "2026-10-30T16:58:49.151Z",
     "cooldowns": {},
     "clanId": null,
     "isRegistered": false,
